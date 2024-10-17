@@ -33,18 +33,18 @@
 
 
             <div class="img-set">
-                <p>Inital tunnel concept</p>
+                <label>Inital tunnel concept</label>
                 <img src="photos/ConcreteTunnels.png">
                 <img src="photos/InEngineTunnelTest.png">
             </div>
 
             <div class="img-set">
-                <p>Alternative ribbed tunnel concept</p>
+                <label>Alternative ribbed tunnel concept</label>
                 <img src="photos/RibbedTunnels.png">
             </div>
 
             <div class="img-set">
-                <p>Open tunnel concept </p>
+                <label>Open tunnel concept </label>
                 <img src="photos/OpenTunnelSegments.png">
             </div>
 
@@ -58,21 +58,26 @@
                 <h3>Creating modular subway station tiles</h3>
             </div>
             <div class="img-set">
-                <p>Inital tiles</p>
+                <label>Inital tiles</label>
                 <img src="photos/StationTiles.png">
                 <img src="photos/StationStairs.png">
             </div>
             <div class="img-set">
-                <p>Additional tiling props</p>
+                <label>Additional tiling props</label>
+                <img src="photos/Rafters.png">
+
                 <img src="photos/StationDetails.png">
                 <img src="photos/StationDoor.png">
             </div>
             <div class="img-set">
-                <p>Level Design Planning</p>
+                <label>Level Design Planning</label>
                 <img src="photos/StationPlanning.png">
             </div>
             <div class="img-set">
-                <p>Blast Door Concept</p>
+                <label>Blast Door Concept</label>
+                <div class="desc">The blast door was intended to close off the tunnel at each station, locking the player in the station.
+                    Unfortunately this idea was scrapped.
+                </div>
                 <img src="photos/BlastDoor2.png">
                 <img src="photos/BlastDoor1.png">
             </div>
@@ -82,15 +87,19 @@
                 <h3>To populate the station tiles</h3>
             </div>
             <div class="img-set">
-                <p>Pileup Example</p>
+                <label>Pileup Example</label>
                 <img src="photos/Trash.png">
             </div>     
             <div class="img-set">
-                <p>Optimizations</p>
+                <label>Optimizations</label>
+                <div class="desc">Given the quantity of rubbish our environment required, optimizations needed to be considered.
+                    Aiming for the smallest rendering overhead, I ensured that each model had a very low vertex count 
+                    while also utilizing a texture atlas allowing for everything to be drawn in a single draw call.
+                </div>
                 <img src="photos/TrashOptimized.png">
             </div>     
             <div class="img-set">
-                <p>Close Ups</p>
+                <label>Close Ups</label>
                     <img src="photos/TrashClose1.png">
                     <img src="photos/TrashClose2.png">
             </div>   
@@ -98,9 +107,18 @@
                 <h2>Audio</h2>
                 <h3>Sounds FX & Ambience</h3>
             </div>
-            <p>All the audio produced for the project was created/manipulated using Abelton Live</p>
+            <div class="desc">With sound playing a huge role in creating an immersive experience, I chose to explore looping atmospheric sounds 
+                for our environment, Additionally I created a variety of one shot sound effects to be played on a per event basis. 
+                All the audio produced for the project was created/manipulated using Ableton Live 
+            </div>
 
             <div class="img-set">
+
+                <div class="chips">
+                    <div class="chip music">Music</div>
+                    <div class="chip ambience">Atmospheric</div>
+                    <div class="chip fx">One Shot</div>
+                </div>
 
                 <!-- Ambience -->
                 <div class="audio-set music">
@@ -138,8 +156,16 @@
 
             </div>
             <div class="img-set">
-                <p>Scripts</p>
+                <label>Scripts</label>
+                <div class="desc">Given the tedious nature of managing Audio Sources in Unity, I reused and enhanced an existing AudioManager that I created for an earlier project.
+                    The AudioManager allows one shot sound effects to be played programmatically. This script utilizes a pool of objects which fill the required sounds needs (position, volume, pitch)
+                </div>
                 <img src="photos/AudioManager.png">
+                <img src="photos/CodeSoundExample.png">
+
+                <div class="desc">... </div>
+                </div>
+
                 <img src="photos/LoopingAudioManager.png">
             </div>
 

@@ -10,7 +10,7 @@
 
     --col-1: rgb(139, 80, 194);
     --col-2: rgb(201, 61, 77);
-    --col-3: rgb(225, 196, 52);
+    --col-3: rgb(6, 167, 126);
 }
 
 body{
@@ -29,8 +29,9 @@ img{
     padding-top: var(--space-m);
     padding-bottom: var(--space-m);
 }
-.img-set p{
+.img-set label{
     padding-bottom: var(--space-s);
+    display: block;
 }
 
 .wrapper{
@@ -46,6 +47,15 @@ img{
 }
 .heading.main h3{
     text-align: center;
+}
+
+.desc{
+    opacity: 0.7;
+    font-weight: 300;
+    margin-bottom: var(--space-m);
+    padding-left: var(--space-m);
+    border-left: white solid 2px;
+    box-sizing: border-box;
 }
 
 
@@ -71,7 +81,6 @@ h3{
     grid-template-columns: 1fr 2fr;
     gap: var(--space-s);
     background-color: #2e2e2f;
-    border-radius: 5px;
     padding: var(--space-s);
     margin-bottom: var(--space-xs);
 
@@ -81,15 +90,34 @@ h3{
     align-self: center;
 }
 .audio-set.fx{
-    border-left: 5px solid var(--col-1);
+    border-left: 4px solid var(--col-1);
 }
 .audio-set.ambience{
-    border-left: 5px solid var(--col-2);
+    border-left: 4px solid var(--col-2);
 }
 .audio-set.music{
-    border-left: 5px solid var(--col-3);
+    border-left: 4px solid var(--col-3);
 }
 .audio-set h4, .audio-set audio{
 
     width: 100%;
+}
+
+.chips{
+    display: flex;
+    gap: var(--space-s);
+    padding-bottom: var(--space-m);
+}
+.chip{
+    background-color: black;
+    padding: var(--space-xs);
+}
+.chip.fx{
+    background-color: var(--col-1);
+}
+.chip.ambience{
+    background-color: var(--col-2);
+}
+.chip.music{
+    background-color: var(--col-3);
 }
