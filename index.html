@@ -33,9 +33,22 @@
 
 
             <div class="img-set">
-                <label>Inital tunnel concept</label>
+                <label>Initial tunnel concept</label>
+                <div class="desc">Very early into the project we realized that our games tunnels needed to be modular. 
+                    Our solution utilizes start and end anchor points for each segment which would snap together when generated. A benefit of this is that tunnel segments can be any length, enabling greater variety than fixed length segments.
+                </div>
+                <img src="photos/SnappingTunnelSegments.png">
+
                 <img src="photos/ConcreteTunnels.png">
+
+            </div>
+            <div class="img-set">
+                <label>HDRP Test</label>
+                <div class="desc">Given our project is aiming to be very atmospheric, the Unity High Definition Render Pipeline is something we wanted to utilize, 
+                    particularly looking into its volumetric fog effects for our games tunnel sequences. Unfortunately its performance was not suitable for VR.
+                </div>
                 <img src="photos/InEngineTunnelTest.png">
+
             </div>
 
             <div class="img-set">
@@ -58,7 +71,9 @@
                 <h3>Creating modular subway station tiles</h3>
             </div>
             <div class="img-set">
-                <label>Inital tiles</label>
+                <label>Initial tiles</label>
+                <div class="desc">Similar to the tunnel segments, we followed a modular approach to creating stations.
+                </div>
                 <img src="photos/StationTiles.png">
                 <img src="photos/StationStairs.png">
             </div>
@@ -73,22 +88,17 @@
                 <label>Level Design Planning</label>
                 <img src="photos/StationPlanning.png">
             </div>
-            <div class="img-set">
-                <label>Blast Door Concept</label>
-                <div class="desc">The blast door was intended to close off the tunnel at each station, locking the player in the station.
-                    Unfortunately this idea was scrapped.
-                </div>
-                <img src="photos/BlastDoor2.png">
-                <img src="photos/BlastDoor1.png">
-            </div>
 
             <div class="heading">
-                <h2>Rubbish</h2>
-                <h3>To populate the station tiles</h3>
+                <h2>Props</h2>
+                <h3>Filling out the space</h3>
             </div>
             <div class="img-set">
-                <label>Pileup Example</label>
+                <label>Rubbish</label>
+                <div class="desc">To convey the unmaintained nature of the subway stations, we decided small rubbish items should litter the grounds.
+                </div>
                 <img src="photos/Trash.png">
+
             </div>     
             <div class="img-set">
                 <label>Optimizations</label>
@@ -97,12 +107,36 @@
                     while also utilizing a texture atlas allowing for everything to be drawn in a single draw call.
                 </div>
                 <img src="photos/TrashOptimized.png">
+                <img src="photos/TrashClose1.png">
+                <img src="photos/TrashClose2.png">
             </div>     
+
             <div class="img-set">
-                <label>Close Ups</label>
-                    <img src="photos/TrashClose1.png">
-                    <img src="photos/TrashClose2.png">
-            </div>   
+                <label>Blast Door Concept</label>
+                <div class="desc">The blast door was intended to close off the tunnel at each station, locking the player inside.
+                    Unfortunately this idea was scrapped.
+                </div>
+                <img src="photos/BlastDoor2.png">
+                <img src="photos/BlastDoor1.png">
+            </div>
+            <div class="img-set">
+                <label>Associated Gameplay</label>
+                <div class="desc">Something discussed briefly as a group was the motivation for your actions, <br><br><em>"Why does the player need to stop at every station?"</em><br><br>
+                    Our idea was that at every stop the player must repair/maintain the train (whether that be refueling, repairing an electrical fault, etc...) in order to keep progressing. To create urgency we also discussed introducing
+                    a timer of sorts, meaning the player could only stay at a station for X amount of time, or something catastrophic would happen.
+                </div>
+                <img src="photos/TimerConcept.png">
+            </div>
+            <div class="img-set">
+                <label>Elevator Concept</label>
+                <div class="desc">The elevator was created to be purely decorative (out of order), being placed in the walls of the station. It was made primarily to both explore the TexTools texturing
+                    workflow taught in the recordings and better familiarize myself with Substance Painter and its generative abilities. 
+                </div>
+                <img src="photos/Elevator.png">
+            </div>
+
+
+
             <div class="heading">
                 <h2>Audio</h2>
                 <h3>Sounds FX & Ambience</h3>
@@ -127,17 +161,21 @@
                 </div>
 
                 <div class="audio-set ambience">
-                    <h4>[Ambience Demo 1]</h4>
+                    <h4>[Ambience Demo]</h4>
                     <audio src="sounds/Breath Ambience [RAW].wav" controls></audio>
                 </div>
 
                 <div class="audio-set ambience">
-                    <h4>[Ambience Demo 2]</h4>
-                    <audio src="sounds/[Ambience Demo 2].wav" controls></audio>
+                    <h4>[LOOP Station Ambience]</h4>
+                    <audio src="sounds/[LOOP Station Ambience].wav" controls></audio>
+                </div>
+                <div class="audio-set ambience">
+                    <h4>[LOOP Train Rumble]</h4>
+                    <audio src="sounds/[LOOP Train Rumble.wav" controls></audio>
                 </div>
                 <div class="audio-set ambience">
                     <h4>[Rattling Pipes (Recorded)]</h4>
-                    <audio src="sounds/LOOP_RattlingPipes.wav" controls></audio>
+                    <audio src="sounds/[LOOP RattlingPipes].wav" controls></audio>
                 </div>
                 <!-- FX -->
                 <div class="audio-set fx">
@@ -152,6 +190,14 @@
                     <h4>[Torch Crank Demo]</h4>
                     <audio src="sounds/[Crank Sound (Example)].wav" controls></audio>
                 </div>
+                <div class="audio-set fx">
+                    <h4>[Train Door Open]</h4>
+                    <audio src="sounds/[Train Door Open].wav" controls></audio>
+                </div>
+                <div class="audio-set fx">
+                    <h4>[Train Door Close]</h4>
+                    <audio src="sounds/[Train Door Close].wav" controls></audio>
+                </div>
 
 
             </div>
@@ -163,10 +209,18 @@
                 <img src="photos/AudioManager.png">
                 <img src="photos/CodeSoundExample.png">
 
-                <div class="desc">... </div>
+                <div class="desc">In addition to one shot sounds, we needed a way seamlessly introduce and remove looping audio tracks.<br><br>
+                For example, when the player enters the station, ominous ambience should fade in. Or when the train is in motion, a rhythmic rumble should play to 
+                communicate the train on the tracks.<br><br>
+                the Looping Audio Manager addresses these issues, enabling us to programmatically fade in and out looping sounds with a single function call. Additionally, to provide variation
+                each loop can be configured to modulate its volume over time.
+                    
                 </div>
 
+                </div>
                 <img src="photos/LoopingAudioManager.png">
+                <img src="photos/LoopingAudioManagerCall.png">
+
             </div>
 
         </main>
