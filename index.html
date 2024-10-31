@@ -7,7 +7,7 @@
     <title>Portfolio</title>
 
     <!-- Styling -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="content/style.css">
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,9 +37,9 @@
                 <div class="desc">Very early into the project we realized that our games tunnels needed to be modular. 
                     Our solution utilizes start and end anchor points for each segment which would snap together when generated. A benefit of this is that tunnel segments can be any length, enabling greater variety than fixed length segments.
                 </div>
-                <img src="photos/SnappingTunnelSegments.png">
+                <img src="content/photos/SnappingTunnelSegments.png">
 
-                <img src="photos/ConcreteTunnels.png">
+                <img src="content/photos/ConcreteTunnels.png">
 
             </div>
             <div class="img-set">
@@ -47,18 +47,18 @@
                 <div class="desc">Given our project is aiming to be very atmospheric, the Unity High Definition Render Pipeline is something we wanted to utilize, 
                     particularly looking into its volumetric fog effects for our games tunnel sequences. Unfortunately its performance was not suitable for VR.
                 </div>
-                <img src="photos/InEngineTunnelTest.png">
+                <img src="content/photos/InEngineTunnelTest.png">
 
             </div>
 
             <div class="img-set">
                 <label>Alternative ribbed tunnel concept</label>
-                <img src="photos/RibbedTunnels.png">
+                <img src="content/photos/RibbedTunnels.png">
             </div>
 
             <div class="img-set">
                 <label>Open tunnel concept </label>
-                <img src="photos/OpenTunnelSegments.png">
+                <img src="content/photos/OpenTunnelSegments.png">
             </div>
 
 
@@ -74,19 +74,19 @@
                 <label>Initial tiles</label>
                 <div class="desc">Similar to the tunnel segments, we followed a modular approach to creating stations.
                 </div>
-                <img src="photos/StationTiles.png">
-                <img src="photos/StationStairs.png">
+                <img src="content/photos/StationTiles.png">
+                <img src="content/photos/StationStairs.png">
             </div>
             <div class="img-set">
                 <label>Additional tiling props</label>
-                <img src="photos/Rafters.png">
+                <img src="content/photos/Rafters.png">
 
-                <img src="photos/StationDetails.png">
-                <img src="photos/StationDoor.png">
+                <img src="content/photos/StationDetails.png">
+                <img src="content/photos/StationDoor.png">
             </div>
             <div class="img-set">
                 <label>Level Design Planning</label>
-                <img src="photos/StationPlanning.png">
+                <img src="content/photos/StationPlanning.png">
             </div>
 
             <div class="heading">
@@ -97,7 +97,7 @@
                 <label>Rubbish</label>
                 <div class="desc">To convey the unmaintained nature of the subway stations, we decided small rubbish items should litter the grounds.
                 </div>
-                <img src="photos/Trash.png">
+                <img src="content/photos/Trash.png">
 
             </div>     
             <div class="img-set">
@@ -106,9 +106,9 @@
                     Aiming for the smallest rendering overhead, I ensured that each model had a very low vertex count 
                     while also utilizing a texture atlas allowing for everything to be drawn in a single draw call.
                 </div>
-                <img src="photos/TrashOptimized.png">
-                <img src="photos/TrashClose1.png">
-                <img src="photos/TrashClose2.png">
+                <img src="content/photos/TrashOptimized.png">
+                <img src="content/photos/TrashClose1.png">
+                <img src="content/photos/TrashClose2.png">
             </div>     
 
             <div class="img-set">
@@ -116,8 +116,8 @@
                 <div class="desc">The blast door was intended to close off the tunnel at each station, locking the player inside.
                     Unfortunately this idea was scrapped.
                 </div>
-                <img src="photos/BlastDoor2.png">
-                <img src="photos/BlastDoor1.png">
+                <img src="content/photos/BlastDoor2.png">
+                <img src="content/photos/BlastDoor1.png">
             </div>
             <div class="img-set">
                 <label>Associated Gameplay</label>
@@ -125,17 +125,33 @@
                     Our idea was that at every stop the player must repair/maintain the train (whether that be refueling, repairing an electrical fault, etc...) in order to keep progressing. To create urgency we also discussed introducing
                     a timer of sorts, meaning the player could only stay at a station for X amount of time, or something catastrophic would happen.
                 </div>
-                <img src="photos/TimerConcept.png">
+                <img src="content/photos/TimerConcept.png">
             </div>
             <div class="img-set">
                 <label>Elevator Concept</label>
                 <div class="desc">The elevator was created to be purely decorative (out of order), being placed in the walls of the station. It was made primarily to both explore the TexTools texturing
                     workflow taught in the recordings and better familiarize myself with Substance Painter and its generative abilities. 
                 </div>
-                <img src="photos/Elevator.png">
+                <img src="content/photos/Elevator.png">
             </div>
 
-
+            <div class="heading">
+                <h2>Lighting</h2>
+            </div>
+            <div class="img-set">
+                <label>Lighting the environment </label>
+                <div class="desc">To complete the scene, another group member and I decorated illuminated our enviroment. 
+                    We settled for cold spot lights to litter the stations and a warm well lit train interior. Additionally I created a
+                    bright red industrial light to illuminate the tunnels.
+                </div>
+                <img src="content/photos/Lighting.png">
+            </div>
+            <div class="img-set">
+                <label>Distance Fog</label>
+                <div class="desc">Because volumetric fog was not available, I instead configured a simple distance based fog which proved to be very effective.
+                </div>
+                <img src="content/photos/Fog.png">
+            </div>
 
             <div class="heading">
                 <h2>Audio</h2>
@@ -145,7 +161,9 @@
                 for our environment, Additionally I created a variety of one shot sound effects to be played on a per event basis. 
                 All the audio produced for the project was created/manipulated using Ableton Live 
             </div>
-
+            <div class="desc">Additional to gameplay/environmental sounds, We initially planned the game would have some sort of ending with associated music. 
+                Though this ended up being out of the projects scope, it was still a fun thing to experiment with. 
+            </div>
             <div class="img-set">
 
                 <div class="chips">
@@ -157,46 +175,47 @@
                 <!-- Ambience -->
                 <div class="audio-set music">
                     <h4>[Happy Ending Demo]</h4>
-                    <audio src="sounds/[Happy Ending] (file - piano).wav" controls></audio>
+                    <audio src="content/sounds/[Happy Ending] (file - piano).wav" controls></audio>
+                    
                 </div>
 
                 <div class="audio-set ambience">
                     <h4>[Ambience Demo]</h4>
-                    <audio src="sounds/Breath Ambience [RAW].wav" controls></audio>
+                    <audio src="content/sounds/Breath Ambience [RAW].wav" controls></audio>
                 </div>
 
                 <div class="audio-set ambience">
                     <h4>[LOOP Station Ambience]</h4>
-                    <audio src="sounds/[LOOP Station Ambience].wav" controls></audio>
+                    <audio src="content/sounds/[LOOP Station Ambience].wav" controls></audio>
                 </div>
                 <div class="audio-set ambience">
                     <h4>[LOOP Train Rumble]</h4>
-                    <audio src="sounds/[LOOP Train Rumble.wav" controls></audio>
+                    <audio src="content/sounds/[LOOP Train Rumble.wav" controls></audio>
                 </div>
                 <div class="audio-set ambience">
                     <h4>[Rattling Pipes (Recorded)]</h4>
-                    <audio src="sounds/[LOOP RattlingPipes].wav" controls></audio>
+                    <audio src="content/sounds/[LOOP RattlingPipes].wav" controls></audio>
                 </div>
                 <!-- FX -->
                 <div class="audio-set fx">
                     <h4>[Blast Door Closing]</h4>
-                    <audio src="sounds/[Blast Door Closing].wav" controls></audio>
+                    <audio src="content/sounds/[Blast Door Closing].wav" controls></audio>
                 </div>
                 <div class="audio-set fx">
                     <h4>[Blast Door Closing (Variant)]</h4>
-                    <audio src="sounds/[Blast Door Closing (Variant)].wav" controls></audio>
+                    <audio src="content/sounds/[Blast Door Closing (Variant)].wav" controls></audio>
                 </div>
                 <div class="audio-set fx">
                     <h4>[Torch Crank Demo]</h4>
-                    <audio src="sounds/[Crank Sound (Example)].wav" controls></audio>
+                    <audio src="content/sounds/[Crank Sound (Example)].wav" controls></audio>
                 </div>
                 <div class="audio-set fx">
                     <h4>[Train Door Open]</h4>
-                    <audio src="sounds/[Train Door Open].wav" controls></audio>
+                    <audio src="content/sounds/[Train Door Open].wav" controls></audio>
                 </div>
                 <div class="audio-set fx">
                     <h4>[Train Door Close]</h4>
-                    <audio src="sounds/[Train Door Close].wav" controls></audio>
+                    <audio src="content/sounds/[Train Door Close].wav" controls></audio>
                 </div>
 
 
@@ -206,8 +225,8 @@
                 <div class="desc">Given the tedious nature of managing Audio Sources in Unity, I reused and enhanced an existing AudioManager that I created for an earlier project.
                     The AudioManager allows one shot sound effects to be played programmatically. This script utilizes a pool of objects which fill the required sounds needs (position, volume, pitch)
                 </div>
-                <img src="photos/AudioManager.png">
-                <img src="photos/CodeSoundExample.png">
+                <img src="content/photos/AudioManager.png">
+                <img src="content/photos/CodeSoundExample.png">
 
                 <div class="desc">In addition to one shot sounds, we needed a way seamlessly introduce and remove looping audio tracks.<br><br>
                 For example, when the player enters the station, ominous ambience should fade in. Or when the train is in motion, a rhythmic rumble should play to 
@@ -218,8 +237,8 @@
                 </div>
 
                 </div>
-                <img src="photos/LoopingAudioManager.png">
-                <img src="photos/LoopingAudioManagerCall.png">
+                <img src="content/photos/LoopingAudioManager.png">
+                <img src="content/photos/LoopingAudioManagerCall.png">
 
             </div>
 
