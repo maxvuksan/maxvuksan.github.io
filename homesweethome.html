@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <title> Home Sweet Home </title>      
+        <link rel="stylesheet" href="style.css">  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Schoolbell&display=swap" rel="stylesheet">
+
+    </head>
+    <body class="home-bg">
+
+        <audio id="audio" loop>
+            <source src="sounds/space.wav">
+        </audio>
+
+        <main class="flex-center w100vw">
+            <div class="flex-center-v h100vh rel">
+                <img is3d class="home-img" depth="30" src="home.png">
+                <img is3d class="abs" depth="60" src="homelayer2.png">
+                <img is3d class="abs" depth="200" x="-500" src="dots.png">
+                <img is3d class="abs" depth="400" x="-500" src="dots2.png">
+                
+                <img is3d class="abs" depth="180" x="580" y="-140" spin spin_speed="0.1" src="prop_rummy2.png">
+                <img is3d class="abs" depth="183" x="610" y="-140" spin  spin_speed="0.1"  src="prop_rummy1.png">
+                <img is3d class="abs" depth="250" x="300" y="300" spin  spin_speed="-0.3"  src="prop_cube.png">
+
+                <img is3d class="abs" depth="80" x="-300" y="-200" spin spin_speed="0.6" src="cat.png">
+            </div>
+        </main>
+
+        <script defer src="./locked_door.js"></script>
+    </body>
+</html>
