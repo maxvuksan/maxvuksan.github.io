@@ -1,48 +1,90 @@
-html,body {
-    height:100%;
-    margin:0;
-    color: rgb(255, 220, 199);
+
+* {
+    font-family: "Zalando Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    --space-xs: 0.25rem;
+    --space-s: 0.5rem;
+    --space-m: 1rem;
+    --space-l: 2rem;
+    --space-xl: 4rem;
+
+    --max-width: 700px;
+
+    --colour-link: rgb(21, 142, 255);
+
+    font-size: 1.1rem;
+
 }
 
-*{
-    font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    height: 100%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: var(--max-width);
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-xl);
+    gap: var(--space-l);
+}
+
+a{
+    color: var(--colour-link);
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
 }
 
 h3{
-    background-color: rgb(36, 22, 22);
-    margin-bottom: 0.5em;
-    width: fit-content;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
 }
-
 p{
-    color: rgb(165, 126, 111);
-    font-weight: 600;
+    margin: 0;
+    font-weight: 200;
+    font-size: 1rem;
+
+    color: rgb(90, 90, 90);
+
 }
 
-#filaments {
-    position:fixed;
-    inset:0;
-    width:100%;
-    height:100%;
-    display:block;
-    z-index:-1;
-}
-
-.cent, .cent-vert{
+ul{
+    margin-top: 0;
+    margin-bottom: 0;
     display: flex;
-    justify-content: center;
-}
-.cent-vert{
     flex-direction: column;
+    gap: var(--space-s);
+}
+
+li{
+    list-style: none;
 }
 
 
-.split{
-    height: 100vh;
-    width: 100%;
+
+
+.grid-2{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-m);
+}
+
+.grid-1{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-m);
+}
+
+img{
+    width: 100%;
 }
