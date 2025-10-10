@@ -78,15 +78,21 @@ li{
 .grid-2{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--space-m);
+    gap: var(--space-s);
 }
 
 .grid-1{
     display: grid;
     grid-template-columns: 1fr;
-    gap: var(--space-m);
+    gap: var(--space-s);
 }
 
+iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto; /* optional but safe */
+  display: block; /* recommended for iframes */
+}
 img{
     width: 100%;
 }
