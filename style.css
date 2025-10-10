@@ -33,6 +33,8 @@ main{
     max-width: var(--max-width);
     margin-top: var(--space-xl);
     margin-bottom: var(--space-xl);
+    margin-left: var(--space-m);
+    margin-right: var(--space-m);
     gap: var(--space-l);
 }
 
