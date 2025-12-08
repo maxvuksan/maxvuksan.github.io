@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+
+        <h3>Snapshots Postmortem</h3>
+
+        <p><a href="./Snapshots.html">Snapshots</a> is a game both organizing messy spaces and deciphering secrets.</p>
+
+        <p>The game was initially inspired by <a href="https://store.steampowered.com/app/1629520/A_Little_to_the_Left/" target="_blank">A Little To The Left</a> and other tidy up games my partner loves, but gradually grew more treasure hunting oriented as development progressed.</p>
+
+        <p>-</p>
+
+        <p>I've always been a big fan of games that have strange art styles, Most recently I've been admiring the work of the <a target=_blank href="https://sokpop.co/">Sokpop</a> and their approach to <a target=_blank href="https://en.wikipedia.org/wiki/Pixel-art_scaling_algorithms">upscaling pixelated graphics.</a></p>
+
+        <p>Inspired by this, all the games sprites are drawn as pixel art, and rendered to a low-resolution texture. I then draw this texture to a larger texture using a fancy custom upscaling shader, this texture is then upscaled again to a final 1920x1080 texture.</p>
+
+        <p>The main drawback of this upscaling technique was that it produced very harsh edges on sprites with any curvature. This for example, is noticeable on the text in the menu; while not terrible, the look is definitely more aliased than I had intended.</p>
+
+        <p>-</p>
+
+        <p>The game contains hundreds of different sound effects. I'm found myself quite comfortable making musical audio but the majority of the audio in the project was made up of foley sounds</p>
+
+        <p>there are but also because I wanted the secrets you find in the game to be very sound rich.
+        My favorite example of this is as when you unlock keys (the secret currency) a mystical music layer fades in but is abruptly cut by a hollow wind sound.</p>
+
+        <p>Though many people wont consciously notice these kind of things, it is that final layer polish that completes the experience.</p>
+
+        <p>-</p>
+
+        <p>Development took around 6 months. I had a block of around a month or two where I was able to be my busiest, working on it every day, but beside that I would be scribbling down ideas while I was out at work, and implementing them in the evening; A very chaotic schedule.</p>
+
+        <p>I think my biggest blocker with making games is coming up with good implementable ideas, so having days where I could just think about things helped.</p>
+
+        <p>With <a href="./Snapshots.html">Snapshots</a> all wrapped up, I'm eager to dive into something new; stay tuned</p>
+
+        <a href="./Snapshots.html">back</a>
+    </main>
+</body>
+
+</html>
