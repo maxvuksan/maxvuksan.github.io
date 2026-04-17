@@ -11,12 +11,11 @@
     --space-xl: 4rem;
 
     --max-width: 700px;
-    --max-width: 1400px;
+    --max-width-wide: 1400px;
 
     --colour-link: rgb(21, 142, 255);
 
     font-size: 1.1rem;
-
 }
 
 .txt-ondark{
