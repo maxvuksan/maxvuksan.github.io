@@ -93,6 +93,12 @@ li{
     grid-template-columns: 1fr 1fr;
     gap: var(--space-s);
 }
+.grid-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--space-s);
+}
+
 
 .grid-1{
     display: grid;
