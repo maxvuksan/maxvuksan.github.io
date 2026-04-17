@@ -11,6 +11,7 @@
     --space-xl: 4rem;
 
     --max-width: 700px;
+    --max-width: 1400px;
 
     --colour-link: rgb(21, 142, 255);
 
@@ -18,6 +19,12 @@
 
 }
 
+.txt-ondark{
+    color: rgb(255, 255, 255);
+}
+.txt-ondark-g{
+    color: rgb(168, 168, 168);
+}
 
 body{
     margin: 0;
@@ -37,6 +44,10 @@ main{
     margin-left: var(--space-m);
     margin-right: var(--space-m);
     gap: var(--space-l);
+}
+
+main.width{
+    max-width: var(--max-width-wide);
 }
 
 a{
@@ -79,8 +90,6 @@ li{
 }
 
 
-
-
 .grid-2{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -101,4 +110,8 @@ iframe {
 }
 img{
     width: 100%;
+}
+
+em{
+    color: white
 }
