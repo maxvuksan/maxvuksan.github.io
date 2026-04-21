@@ -39,3 +39,8 @@ main{
     display: block;
     margin-bottom: var(--space-l);
 }
+
+.grid-2.limit{
+    max-height: 600px; 
+    overflow: hidden;
+}
